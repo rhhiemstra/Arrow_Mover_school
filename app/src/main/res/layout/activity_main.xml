@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/up_arrow"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Up"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/downBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Down"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/downBtn"
+        android:layout_toLeftOf="@id/textView"
+        android:text="Left"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/downBtn"
+        android:layout_toRightOf="@id/textView"
+        android:text="Right"
+        android:background="@drawable/button_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="105dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/downBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+
+        android:text=""
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+</android.widget.RelativeLayout>
